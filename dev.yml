@@ -1,0 +1,6 @@
+ghost:
+  build: .
+  ports:
+   - "80:2368"
+  environment:
+    - BLOG_URL=docker.dev

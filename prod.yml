@@ -1,0 +1,6 @@
+ghost:
+  build: .
+  ports:
+   - "8001:2368"
+  environment:
+    - BLOG_URL=blog.thejsj.com
