@@ -27,7 +27,7 @@ ADD content /_ghost-override/content
 ENV NODE_ENV production
 
 # Define mountable directories.
-VOLUME ["/ghost-override/data", "/ghost-override/images"]
+VOLUME ["/ghost-override"]
 
 # Define working directory.
 WORKDIR /ghost

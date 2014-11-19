@@ -9,7 +9,7 @@ IMAGES="content/images"
 THEMES="content/themes"
 
 # For some reason, something delete our content when we copy it in the Dockerfile
-rm -rf /ghost-override/content
+rm -rf "$OVERRIDE"/content
 mv /_ghost-override/content "$OVERRIDE"
 rm -rf /_ghost-override
 
