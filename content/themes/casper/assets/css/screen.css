@@ -118,7 +118,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "casper-icons", "freight-sans-pro", "Open Sans", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -206,18 +206,18 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.3em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "freight-sans-pro", "Open Sans", sans-serif;
 }
 
 h1 {
     font-size: 5.6rem;
-    letter-spacing: -2px;
+    letter-spacing: -0.5px;
     text-indent: -3px;
 }
 
 h2 {
     font-size: 4.4rem;
-    letter-spacing: -1px;
+    /*letter-spacing: -1px;*/
 }
 
 h3 {
@@ -491,7 +491,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "freight-sans-pro", 'Open Sans', sans-serif;
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -656,10 +656,13 @@ margin on the iframe, cause it breaks stuff. */
 .page-title {
     margin: 10px 0 10px 0;
     font-size: 5.6rem;
-    letter-spacing: -1px;
+    letter-spacing: 0.4px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "freight-sans-pro", "Open Sans", sans-serif;
     color: #fff;
+    /* JSJ Overwrite */
+    color: #333;
+    text-shadow: 0 0 2px rgba(0,0,100,0.3);
 }
 
 .page-description {
@@ -696,16 +699,16 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Add subtle load-in animation for content on the home page */
 .home-template .page-title {
-    -webkit-animation: fade-in-down 0.6s;
-    animation: fade-in-down 0.6s;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    -webkit-animation: fade-in-down 1s;
+    animation: fade-in-down 1s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
 }
 .home-template .page-description {
-    -webkit-animation: fade-in-down 0.9s;
-    animation: fade-in-down 0.9s;
-    -webkit-animation-delay: 0.1s;
-    animation-delay: 0.1s;
+    -webkit-animation: fade-in-down 1s;
+    animation: fade-in-down 1s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -758,7 +761,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 2rem 0 0.6rem 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "freight-sans-pro", "Open Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1189,7 +1192,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 780px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family:"freight-sans-pro", "Open Sans", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1276,7 +1279,7 @@ body:not(.post-template) .post-title {
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+    font-family: "freight-sans-pro", "Open Sans", sans-serif;
     font-size: 1rem;
     line-height: 1.7em;
     color: #BBC7CC;
@@ -1409,7 +1412,7 @@ body:not(.post-template) .post-title {
 
     .page-title {
         font-size: 4rem;
-        letter-spacing: -1px;
+       /* letter-spacing: -1px;*/
     }
 
     .page-description {

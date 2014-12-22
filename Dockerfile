@@ -19,21 +19,25 @@ RUN \
   useradd ghost --home /ghost
 
 # Add files.
-ADD start.bash /ghost-start
-RUN mkdir -p /ghost-override
-ADD content /_ghost-override/content
+ADD start.sh /ghost-start
+RUN chmod +x /ghost-start
+RUN mkdir -p /ghost-override/content/themes
+ADD content/themes /ghost-override/content/themes
 
 # Set environment variables.
 ENV NODE_ENV production
 
 # Define mountable directories.
-VOLUME ["/ghost-override/data", "/ghost-override/images"]
+# We load the volumes from the local directory
+# That way, we don't have to worry about backups or lost files....
+# like last time
+# VOLUME ["/ghost-override/content/data", "/ghost-override/content/images"]
 
 # Define working directory.
 WORKDIR /ghost
 
 # Define default command.
-CMD ["bash", "/ghost-start"]
+ENTRYPOINT ["/ghost-start"]
 
 # Expose ports.
 EXPOSE 2368
