@@ -1,3 +1,6 @@
 # Ignore Images and Data
 content/images
 content/data
+
+# Mac
+.DS_Stroe
