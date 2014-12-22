@@ -1,6 +1,7 @@
 # Ignore Images and Data
-content/images
-content/data
+content/*
+content/**/*
+!content/themes
 
 # Mac
 .DS_Store
