@@ -19,7 +19,8 @@ RUN \
   useradd ghost --home /ghost
 
 # Add files.
-ADD start.bash /ghost-start
+ADD start.sh /ghost-start
+RUN chmod +x /ghost-start
 RUN mkdir -p /ghost-override
 ADD content /_ghost-override/content
 
@@ -33,7 +34,7 @@ VOLUME ["/ghost-override"]
 WORKDIR /ghost
 
 # Define default command.
-CMD ["bash", "/ghost-start"]
+ENTRYPOINT ["/ghost-start"]
 
 # Expose ports.
 EXPOSE 2368
