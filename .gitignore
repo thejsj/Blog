@@ -1,6 +1,10 @@
 # Ignore Images and Data
-content/images
-content/data
+content/*
+content/**/*
+!content/themes
+
+.pyc
+fabfile.py
 
 # Mac
 .DS_Store
