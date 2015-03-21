@@ -21,8 +21,8 @@ RUN \
 # Add files.
 ADD start.sh /ghost-start
 RUN chmod +x /ghost-start
-RUN mkdir -p /ghost-override/content/themes
-ADD content/themes /ghost-override/content/themes
+# RUN mkdir -p /ghost-override/content/themes
+# ADD content/themes /ghost-override/content/themes
 
 # Set environment variables.
 ENV NODE_ENV production
