@@ -1,8 +1,7 @@
 ghost:
   build: .
   volumes:
-   - ./content/data:/ghost-override/content/data
-   - ./content/images:/ghost-override/content/images
+   - ./content/:/ghost/content
   ports:
    - "8001:2368"
   environment:
