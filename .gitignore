@@ -1,6 +1,8 @@
 # Ignore Images and Data
 content/*
 content/**/*
+content/data
+content/images
 !content/themes
 !content/apps
 
