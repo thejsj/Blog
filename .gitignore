@@ -2,6 +2,7 @@
 content/*
 content/**/*
 !content/themes
+!content/apps
 
 .pyc
 fabfile.py
